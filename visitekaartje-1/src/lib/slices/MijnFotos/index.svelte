@@ -7,9 +7,9 @@
 </script>
 
 <section data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
-	<h1>{slice?.primary.title[0].text}</h1>
+	<h1>{slice.primary.title[0].text}</h1>
 
-	<img src={slice.primary.image.url} >
+	<img src={slice.primary.image.url} alt="">
 </section>
 
 <style>

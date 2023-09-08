@@ -29,9 +29,6 @@
 					"choices": {
 						"rich_text": {
 							"type": "SharedSlice"
-						},
-						"images": {
-							"type": "SharedSlice"
 						}
 					}
 				}
