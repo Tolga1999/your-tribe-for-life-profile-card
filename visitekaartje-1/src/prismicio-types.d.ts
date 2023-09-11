@@ -4,7 +4,7 @@ import type * as prismic from '@prismicio/client';
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type HomeDocumentDataSlicesSlice = MijnFotosSlice | RichTextSlice;
+type HomeDocumentDataSlicesSlice = MijnFotosSlice;
 
 /**
  * Content for home documents
@@ -159,32 +159,72 @@ export type PageDocument<Lang extends string = string> = prismic.PrismicDocument
 export type AllDocumentTypes = HomeDocument | PageDocument;
 
 /**
- * Primary content in *MijnFotos → Primary*
+ * Primary content in *VisitekaartjeContainer → Primary*
  */
 export interface MijnFotosSliceDefaultPrimary {
 	/**
-	 * title field in *MijnFotos → Primary*
+	 * NameTitle field in *VisitekaartjeContainer → Primary*
 	 *
-	 * - **Field Type**: Rich Text
+	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: mijn_fotos.primary.title
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **API ID Path**: mijn_fotos.primary.nameTitle
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
 	 */
-	title: prismic.RichTextField;
+	nameTitle: prismic.KeyTextField;
 
 	/**
-	 * image field in *MijnFotos → Primary*
+	 * profileImage field in *VisitekaartjeContainer → Primary*
 	 *
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: mijn_fotos.primary.image
+	 * - **API ID Path**: mijn_fotos.primary.profileImage
 	 * - **Documentation**: https://prismic.io/docs/field#image
 	 */
-	image: prismic.ImageField<never>;
+	profileImage: prismic.ImageField<never>;
+
+	/**
+	 * experienceTitle field in *VisitekaartjeContainer → Primary*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: mijn_fotos.primary.experienceTitle
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	experienceTitle: prismic.KeyTextField;
+
+	/**
+	 * experienceContent field in *VisitekaartjeContainer → Primary*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: mijn_fotos.primary.experienceContent
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	experienceContent: prismic.KeyTextField;
+
+	/**
+	 * AboutTitle field in *VisitekaartjeContainer → Primary*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: mijn_fotos.primary.aboutTitle
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	aboutTitle: prismic.KeyTextField;
+
+	/**
+	 * AboutContent field in *VisitekaartjeContainer → Primary*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: mijn_fotos.primary.aboutContent
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	aboutContent: prismic.KeyTextField;
 }
 
 /**
- * Default variation for MijnFotos Slice
+ * Default variation for VisitekaartjeContainer Slice
  *
  * - **API ID**: `default`
  * - **Description**: Default
@@ -197,12 +237,12 @@ export type MijnFotosSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
- * Slice variation for *MijnFotos*
+ * Slice variation for *VisitekaartjeContainer*
  */
 type MijnFotosSliceVariation = MijnFotosSliceDefault;
 
 /**
- * MijnFotos Shared Slice
+ * VisitekaartjeContainer Shared Slice
  *
  * - **API ID**: `mijn_fotos`
  * - **Description**: MijnFotos

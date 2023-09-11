@@ -8,5 +8,5 @@
 </script>
 
 <section data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
-	<p>{slice.primary.content[0].text}</p>
+	<!-- <p>{slice.primary.content[0].text}</p> -->
 </section>

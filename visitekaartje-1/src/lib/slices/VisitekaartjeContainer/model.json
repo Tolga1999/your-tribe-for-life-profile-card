@@ -1,0 +1,62 @@
+{
+  "id": "mijn_fotos",
+  "type": "SharedSlice",
+  "name": "VisitekaartjeContainer",
+  "description": "MijnFotos",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "nameTitle": {
+          "type": "Text",
+          "config": {
+            "label": "NameTitle",
+            "placeholder": ""
+          }
+        },
+        "profileImage": {
+          "type": "Image",
+          "config": {
+            "label": "profileImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "experienceTitle": {
+          "type": "Text",
+          "config": {
+            "label": "experienceTitle",
+            "placeholder": ""
+          }
+        },
+        "experienceContent": {
+          "type": "Text",
+          "config": {
+            "label": "experienceContent",
+            "placeholder": ""
+          }
+        },
+        "aboutTitle": {
+          "type": "Text",
+          "config": {
+            "label": "AboutTitle",
+            "placeholder": ""
+          }
+        },
+        "aboutContent": {
+          "type": "Text",
+          "config": {
+            "label": "AboutContent",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
