@@ -50,6 +50,18 @@
 				"alt": null,
 				"__TYPE__": "ImageContent",
 				"thumbnails": {}
+			},
+			"githubPage": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com"
+				}
+			},
+			"linkName": {
+				"__TYPE__": "FieldContent",
+				"value": "order",
+				"type": "Text"
 			}
 		},
 		"items": []

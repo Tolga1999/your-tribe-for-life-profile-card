@@ -221,6 +221,26 @@ export interface MijnFotosSliceDefaultPrimary {
 	 * - **Documentation**: https://prismic.io/docs/field#key-text
 	 */
 	aboutContent: prismic.KeyTextField;
+
+	/**
+	 * linkName field in *VisitekaartjeContainer → Primary*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: mijn_fotos.primary.linkName
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	linkName: prismic.KeyTextField;
+
+	/**
+	 * githubPage field in *VisitekaartjeContainer → Primary*
+	 *
+	 * - **Field Type**: Link
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: mijn_fotos.primary.githubPage
+	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 */
+	githubPage: prismic.LinkField;
 }
 
 /**

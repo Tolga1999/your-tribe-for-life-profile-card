@@ -54,6 +54,21 @@
             "label": "AboutContent",
             "placeholder": ""
           }
+        },
+        "linkName": {
+          "type": "Text",
+          "config": {
+            "label": "linkName",
+            "placeholder": ""
+          }
+        },
+        "githubPage": {
+          "type": "Link",
+          "config": {
+            "label": "githubPage",
+            "placeholder": "",
+            "select": null
+          }
         }
       },
       "items": {}

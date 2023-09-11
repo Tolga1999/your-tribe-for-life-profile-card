@@ -18,7 +18,7 @@
 		<p>{slice.primary.aboutContent}</p>
 
 		<div class="center-container">
-			<button>Follow on Github</button>
+			<button><a href={slice.primary.githubPage.url}>{slice.primary.linkName}</a></button>
 		</div>
 
 	</section>
@@ -80,16 +80,18 @@
 		justify-content: center;
 	}
 
+	.center-container a{
+		text-decoration: none;
+		color: white;
+	}
+
 	button{
 		background-color: rgba(255, 255, 255, 0.4);
 		font-size: 1em;
 		font-weight: 700;
-		color: white;
 		padding: 0.9em 3em;
 		border: none;
 		border-radius: 20px;
 		margin-top: 1.25em;
 	}
-
-
 </style>
