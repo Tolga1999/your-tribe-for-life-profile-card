@@ -37,7 +37,7 @@
 
 	h1 {
 		margin: 0.5em 0;
-		padding-left: 0.5em;
+		padding: 0 0 0.25em 0.5em;
 		font-size: 2.25em;
 		font-weight: 800;
 	}
